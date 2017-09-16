@@ -1,0 +1,21 @@
+.features {
+	background: #eee;
+}
+
+.features .container div {
+	display: inline-block;
+	width: calc(25% - 8px);
+	box-sizing: border-box;
+	text-align: center;
+	font-family: "Proxima Nova";
+	font-weight: 400;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.features .container img {
+	display: block;
+	margin: 0px auto;
+	margin-bottom: 32px;
+	border-radius: 64px;
+}

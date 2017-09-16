@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JiroPlay</title>
+	<link rel="stylesheet" type="text/css" href="static/fonts/nova/fonts.min.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+	<link rel="stylesheet" type="text/css" href="static/css/header.css">
+	<link rel="stylesheet" type="text/css" href="static/css/splash.css">
+	<link rel="stylesheet" type="text/css" href="static/css/section.css">
+	<link rel="stylesheet" type="text/css" href="static/css/animations.css">
+	<link rel="stylesheet" type="text/css" href="static/css/features.css">
+	<link rel="stylesheet" type="text/css" href="static/css/temp.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<p> <span>Jiro</span><span>Play</span> </p>
+			<nav>
+				<div onclick="scrollToElement('body');" id="homeButton"> Home </div>
+				<a href="news.html"><div> News </div></a>
+				<a href="developers.html"><div> Developers </div></a>
+				<div onclick="scrollToElement('#download');" id="downloadButton"> Download </div>
+			</nav>
+		</div>
+		<div class="hamburger">
+			MENU
+		</div>
+	</header>
+
+	<main>
+
+		<div id="splash">
+			<h6> JIRO </h6>
+			<h1> The controller for your pocket </h1>
+			<img src="static/img/down.png" onclick="scrollToElement('#download');">
+		</div>
+
+		<div class="features">
+			<div class="section container pad-top pad-bot">
+				<div>
+					<img src="http://via.placeholder.com/120">
+					<b>Friends & Family</b><br>
+					<br>
+					Sit down on the couch and play with your friends & family
+				</div>
+				<div>
+					<img src="http://via.placeholder.com/120">
+					<b>Your phone is a controller</b><br>
+					<br>
+					Use your phone straight away with no need for a controller
+				</div>
+				<div>
+					<img src="http://via.placeholder.com/120">
+					<b>Free & Easy</b><br>
+					<br>
+					No need to buy a console<br>Very easy to start using
+				</div>
+				<div>
+					<img src="http://via.placeholder.com/120">
+					<b>Zero latency</b><br>
+					<br>
+					Because we use the local network, there's zero latency
+				</div>
+			</div>
+		</div>
+
+		<div id="download"></div>
+
+		<div class="section container text-center pad-top">
+
+			<h1> Get the app</h1>
+			<h2> and use it as a controller </h2>
+
+			<br><br>
+
+			<a href="#!"><img src="static/img/google_play_badge.png" style="width: 240px;" class="va-m"></a><a href="#!"><img src="static/img/app_store_badge.svg" style="padding-left: 15px; width: 210px; padding-right: 15px;" class="va-m"></a>
+
+		</div>
+
+		<div class="section container text-center pad-top pad-bot">
+
+			<h1> Download it on your pc</h1>
+			<h2> and have a virtual gaming console </h2>
+
+			<br><br><br>
+
+			<a href="#!"><img class="br-2 hov-dk-2 hov-up-2" src="static/img/windows_download.png"></a>
+			<a href="#!"><img class="br-2 hov-dk-2 hov-up-2" src="static/img/apple_download.png"></a>
+
+		</div>
+
+	</main>
+
+	<footer>
+		Copyright &#9400; JiroPlay 2018
+	</footer>
+
+	<script src="static/js/scrolly.js"></script>
+
+</body>
+</html>

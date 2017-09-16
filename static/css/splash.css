@@ -1,0 +1,64 @@
+
+#splash {
+	position: relative;
+	height: 320px;
+	background-image: url("https://asset.msi.com/global/picture/image/feature/mb/Z270/M5/msi-z270-memory-hero-gaming-m5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+	font-family: "Proxima Nova", gerogia, sans-serif;
+	letter-spacing: 0.1em;
+}
+
+#splash h6 {
+	position: fixed;
+	top: -17px;
+	width: 100%;
+	color: white;
+	text-align: center;
+	font-size: 425px;
+	opacity: 0.05;
+	z-index: 1;
+}
+
+#splash h1 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	color: white;
+	text-align: center;
+	font-size: 42px;
+	line-height: 310px;
+	z-index: 1;
+	opacity: 0.9;
+}
+
+#splash img {
+	position: absolute;
+	left: calc(50% - 25px);
+	animation-name: arrowmove;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#splash::after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.2;
+}
+
+@media screen and (max-width: 750px)
+{
+	#splash {
+		display: none;
+	}
+}
