@@ -17,6 +17,9 @@ footer {
 	padding: 8px;
 	text-align: center;
 	background: white;
+	-webkit-box-shadow: 0px 4px 20px 0px rgba(213,213,213,1);
+	-moz-box-shadow: 0px 4px 20px 0px rgba(213,213,213,1);
+	box-shadow: 0px 4px 20px 0px rgba(213,213,213,1);
 }
 
 img {

@@ -1,0 +1,33 @@
+.card {
+	width: calc(80% - 60px);
+	padding: 30px;
+	background: white;
+	margin: 0px auto;
+	margin-top: 60px;
+	text-align: left;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(213,213,213,1);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(213,213,213,1);
+	box-shadow: 0px 0px 20px 0px rgba(213,213,213,1);
+}
+
+.card h1 {
+	font-size: 24px;
+	margin-bottom: 24px;
+}
+
+.card p {
+	margin-bottom: 12px;
+}
+
+.card span {
+	display: block;
+	text-align: right;
+	font-family: "Proxima Nova";
+}
+
+.card i {
+	display: inline-block;
+	padding-left: 15px;
+	font-weight: 700;
+	font-family: "proxima_nova_ltthin";
+}

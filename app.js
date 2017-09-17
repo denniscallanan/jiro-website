@@ -1,3 +1,24 @@
+var news = [
+	{
+		"title": "Tuna and bacon!",
+		"text": ["This is a paragraph of text.", "This is another paragraph"],
+		"author": "thenewboston",
+		"date": "17/09/2017"
+	},
+	{
+		"title": "Blerken!!!",
+		"text": ["This is a some text.", "Enjoy it!!!!!"],
+		"author": "gregorypeck",
+		"date": "27/13/2117"
+	},
+	{
+		"title": "Blerken!!!",
+		"text": ["This is a some text.", "Enjoy it!!!!!"],
+		"author": "gregorypeck",
+		"date": "27/13/2117"
+	}
+]
+
 const express = require('express')
 const cookieParser = require('cookie-parser')
 var bodyParser = require('body-parser')
@@ -17,7 +38,7 @@ app.get('/', function (req, res) {
 })
 
 app.get('/news', function(req, res) {
-	renderIfPassword(req, res, 'news.html')
+	renderIfPassword(req, res, 'news.html', {'news': news})
 })
 
 app.post('/admin_login', function(req, res) {

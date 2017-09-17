@@ -5,6 +5,8 @@
 	<link rel="stylesheet" type="text/css" href="static/fonts/nova/fonts.min.css" />
 	<link rel="stylesheet" type="text/css" href="static/css/main.css">
 	<link rel="stylesheet" type="text/css" href="static/css/header.css">
+	<link rel="stylesheet" type="text/css" href="static/css/section.css">
+	<link rel="stylesheet" type="text/css" href="static/css/cards.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -27,9 +29,20 @@
 
 	<main>
 
-		<div class="container pad-top pad-bot">
-			<center><h2> News </h2></center>
-			<br><br>
+		<div class="section container text-center pad-top pad-bot">
+			<h1> Latest News </h1>
+			<br>
+
+			<% for (var newsItem of news) { %>
+				<div class="card">
+					<h1> <%= newsItem.title %> </h1>
+					<% for (var p of newsItem.text) { %>
+						<p> <%= p %> </p>
+					<% } %>
+					<span> <%= newsItem.author %> <i> <%= newsItem.date %> </i> </span>
+				</div>
+			<% } %>
+
 		</div>
 
 	</main>
