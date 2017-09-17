@@ -1,7 +1,7 @@
 var news = [
 	{
 		"title": "Tuna and bacon!",
-		"text": ["This is a paragraph of text.", "This is another paragraph"],
+		"text": ["This is a paragraph of text. dsfdsfsdfdsfdsf dsfdsfsdfdsfdsf   dsfdsfdsfdsfdsfdsf sdfdsfdsfdsfdsf sdfdsfsdfdsfsdf dsfdsfdsfdssdfsdf  sdfdsfdsfsdfdsfs", "This is another paragraph"],
 		"author": "thenewboston",
 		"date": "17/09/2017"
 	},
