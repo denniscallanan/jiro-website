@@ -7,7 +7,7 @@ header {
 	line-height: 70px;
 	background: white;
 	transition: height 0.3s, line-height 0.3s;
-	z-index: 3;
+	z-index: 4;
 }
 
 header.scrolled {
@@ -115,14 +115,19 @@ header .hamburger {
 	header nav {
 		position: fixed;
 		top: 50px;
-		right: -320px;
+		right: -260px;
 		width: 100vw;
-		max-width: 320px;
+		padding-top: 20px;
+		max-width: 240px;
 		height: 100vh;
 		margin: 0px;
 		background: white;
 		text-align: center;
 		transition: right 0.3s;
+		-webkit-box-shadow: 4px 10px 20px 0px rgba(63,63,63,0.5);
+		-moz-box-shadow: 4px 10px 20px 0px rgba(63,63,63,0.5);
+		box-shadow: 4px 10px 20px 0px rgba(63,63,63,0.5);
+		z-index: 3;
 	}
 
 	header nav.open {
@@ -136,16 +141,16 @@ header .hamburger {
 
 	header nav div::after {
 		top: 25px;
-		left: 0px;
-		width: 6px;
+		left: 4px;
+		width: 4px;
 		height: 0px;
 	}
 
 	header nav div:hover::after, header nav div.selected::after {
-		top: 5px;
-		left: 0px;
-		width: 6px;
-		height: 40px;
+		top: 11px;
+		left: 4px;
+		width: 4px;
+		height: 28px;
 	}
 
 	header.scrolled {
