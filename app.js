@@ -10,6 +10,10 @@ app.get('/', function (req, res) {
 	res.render('index.html');
 })
 
+app.get('/news', function(req, res) {
+	res.render('news.html');
+})
+
 app.listen(process.env.PORT || 8000, function () {
 	console.log('JiroPlay app is running!');
 })
