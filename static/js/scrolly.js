@@ -3,7 +3,7 @@ function scrollToElement(query, behavior="smooth")
 	document.querySelector(query).scrollIntoView({behavior: behavior, block: "start", inline: "start"});
 }
 
-function scrollToElementPlus(destination, duration = 800, easing = 'easeInOutQuad', callback)
+function scrollToElementPlus(destination, duration = 400, easing = 'easeInOutQuad', callback)
 {
 	const easings = {
 		linear(t) {

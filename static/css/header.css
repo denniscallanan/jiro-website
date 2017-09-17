@@ -46,6 +46,10 @@ header nav {
 	font-family: 'Proxima Nova', Georgia, sans-serif;
 }
 
+header nav a {
+	text-decoration: none;
+}
+
 header nav div {
 	position: relative;
 	display: inline-block;
@@ -69,7 +73,7 @@ header nav div::after {
 	height: 3px;
 	background: #09527a;
 	opacity: 0;
-	transition: width 0.3s, left 0.3s, opacity 0.3s, top 0.3s;
+	transition: width 0.3s, left 0.3s, height 0.3s, top 0.3s, opacity 0.3s;
 }
 
 header nav div:hover::after, header nav div.selected::after {
@@ -87,6 +91,7 @@ header .hamburger {
 	position: fixed;
 	top: 0px;
 	right: 24px;
+	cursor: pointer;
 }
 
 @media screen and (max-width: 550px)
@@ -103,11 +108,58 @@ header .hamburger {
 		font-size: 22px;
 	}
 
-	header nav div::after {
-		top: 40px;
-	}
-
 	header .hamburger {
 		display: block;
+	}
+
+	header nav {
+		position: fixed;
+		top: 50px;
+		right: -320px;
+		width: 100vw;
+		max-width: 320px;
+		height: 100vh;
+		margin: 0px;
+		background: white;
+		text-align: center;
+		transition: right 0.3s;
+	}
+
+	header nav.open {
+		right: 0px;
+	}
+
+	header nav div {
+		display: block;
+		margin: 0px;
+	}
+
+	header nav div::after {
+		top: 25px;
+		left: 0px;
+		width: 6px;
+		height: 0px;
+	}
+
+	header nav div:hover::after, header nav div.selected::after {
+		top: 5px;
+		left: 0px;
+		width: 6px;
+		height: 40px;
+	}
+
+	header.scrolled {
+		height: 50px;
+		line-height: 50px;
+	}
+
+	header span {
+		font-family: "Proxima Nova";
+		vertical-align: middle;
+	}
+
+	header img {
+		padding-left: 10px;
+		vertical-align: middle;
 	}
 }

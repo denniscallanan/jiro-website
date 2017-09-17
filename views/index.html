@@ -17,15 +17,16 @@
 	<header>
 		<div class="container">
 			<p> <span>Jiro</span><span>Play</span> </p>
-			<nav>
+			<nav id="navMenu" onclick="menuClick();">
 				<div onclick="scrollToElementPlus('body');" id="homeButton"> Home </div>
 				<a href="news.html"><div> News </div></a>
 				<a href="developers.html"><div> Developers </div></a>
 				<div onclick="scrollToElementPlus('#download');" id="downloadButton"> Download </div>
 			</nav>
 		</div>
-		<div class="hamburger">
-			MENU
+		<div class="hamburger" onclick="toggleMenu();">
+			<span> MENU </span>
+			<img src="static/img/menu.png">
 		</div>
 	</header>
 
@@ -98,6 +99,7 @@
 	</footer>
 
 	<script src="static/js/scrolly.js"></script>
+	<script src="static/js/hamburger.js"></script>
 
 </body>
 </html>
