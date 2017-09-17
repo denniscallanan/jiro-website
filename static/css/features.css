@@ -19,3 +19,14 @@
 	margin-bottom: 32px;
 	border-radius: 64px;
 }
+
+@media screen and (max-width: 750px)
+{
+
+	.features .container div {
+		display: block;
+		width: calc(100vw - 40px);
+		max-width: 320px;
+		margin: 60px auto;
+	}
+}
