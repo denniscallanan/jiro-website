@@ -1,25 +1,25 @@
+function openMenu()
+{
+	navMenu.classList.add("open");
+	navMenuBlack.classList.add("visible");
+}
+
+function closeMenu()
+{
+	navMenu.classList.remove("open");
+	navMenuBlack.classList.remove("visible");
+}
+
 function toggleMenu()
 {
 	if (navMenu.classList.contains("open"))
 	{
-		navMenu.classList.remove("open");
-		navMenuBlack.classList.remove("visible");
+		closeMenu();
 	}
 	else
 	{
-		navMenu.classList.add("open");
-		navMenuBlack.classList.add("visible");
+		openMenu();
 	}
 }
 
-function menuClick()
-{
-	navMenu.classList.remove("open");
-	navMenuBlack.classList.remove("visible");
-}
-
-navMenuBlack.onclick = function()
-{
-	navMenu.classList.remove("open");
-	navMenuBlack.classList.remove("visible");
-}
+navMenuBlack.onclick = closeMenu;
