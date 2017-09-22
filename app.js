@@ -1,21 +1,21 @@
 var news = [
 	{
-		"title": "Tuna and bacon!",
-		"text": ["This is a paragraph of text. dsfdsfsdfdsfdsf dsfdsfsdfdsfdsf   dsfdsfdsfdsfdsfdsf sdfdsfdsfdsfdsf sdfdsfsdfdsfsdf dsfdsfdsfdssdfsdf  sdfdsfdsfsdfdsfs", "This is another paragraph"],
+		"title": "Why choose us over airconsole?",
+		"text": ["Find out soon!"],
+		"author": "JiroPlay Team",
+		"date": "22/09/2017"
+	},
+	{
+		"title": "Tuna and bacon",
+		"text": ["HTML5 tutorials", "check them out"],
 		"author": "thenewboston",
-		"date": "17/09/2017"
+		"date": "09/11/2000"
 	},
 	{
-		"title": "Blerken!!!",
-		"text": ["This is a some text.", "Enjoy it!!!!!"],
+		"title": "Easter Egg",
+		"text": ["This is a some text.", "Enjoy it!!!!!", "There is actually no easter egg here..."],
 		"author": "gregorypeck",
-		"date": "27/13/2117"
-	},
-	{
-		"title": "Blerken!!!",
-		"text": ["This is a some text.", "Enjoy it!!!!!"],
-		"author": "gregorypeck",
-		"date": "27/13/2117"
+		"date": "27/13/2217"
 	}
 ]
 
@@ -34,23 +34,16 @@ app.engine('html', require('ejs').renderFile)
 app.set('view engine', 'html')
 
 app.get('/', function (req, res) {
-	renderIfPassword(req, res, 'index.html')
+	renderIfProceed(req, res, 'index.html')
 })
 
 app.get('/news', function(req, res) {
-	renderIfPassword(req, res, 'news.html', {'news': news})
+	renderIfProceed(req, res, 'news.html', {'news': news})
 })
 
-app.post('/admin_login', function(req, res) {
-	if (req.body.password == "kreggle90")
-	{
-		req.session.logged = "indeed";
-		res.send("welcome");
-	}
-	else
-	{
-		res.send("you are not welcome");
-	}
+app.get('/proceed', function(req, res) {
+	req.session.proceed = "indeed";
+	res.send("welcome");
 })
 
 app.listen(process.env.PORT || 8000, function () {
@@ -59,9 +52,9 @@ app.listen(process.env.PORT || 8000, function () {
 
 // FUNCTIONS
 
-function renderIfPassword(req, res, page, data)
+function renderIfProceed(req, res, page, data)
 {
-	if (req.session.logged)
+	if (req.session.proceed)
 	{
 		if (data)
 		{
@@ -74,6 +67,6 @@ function renderIfPassword(req, res, page, data)
 	}
 	else
 	{
-		res.render("password_protected.html");
+		res.render("not_password_protected.html");
 	}
 }
