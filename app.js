@@ -1,21 +1,9 @@
 var news = [
 	{
-		"title": "Why choose us over airconsole?",
-		"text": ["Find out soon!"],
+		"title": "JiroPlay coming soon!",
+		"text": ["We hope JiroPlay will be available in the next 6 months.", "Before the end of 2018 the developers api should be completely ready allowing developers to easily create games for Jiro!"],
 		"author": "JiroPlay Team",
-		"date": "22/09/2017"
-	},
-	{
-		"title": "Tuna and bacon",
-		"text": ["HTML5 tutorials", "check them out"],
-		"author": "thenewboston",
-		"date": "09/11/2000"
-	},
-	{
-		"title": "Easter Egg",
-		"text": ["This is a some text.", "Enjoy it!!!!!", "There is actually no easter egg here..."],
-		"author": "gregorypeck",
-		"date": "27/13/2217"
+		"date": "24/09/2017"
 	}
 ]
 
