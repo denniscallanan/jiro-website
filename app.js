@@ -14,6 +14,7 @@ const session = require('express-session');
 const app = express()
 
 app.use('/static', express.static('static'))
+app.use('/',       express.static('root'))
 app.use(cookieParser())
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(session({'secret': 'Ohhh... this is a secret msg gregory;;'}))
