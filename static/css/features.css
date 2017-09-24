@@ -23,14 +23,31 @@
 	border-radius: 64px;
 }
 
-@media screen and (max-width: 750px)
+@media screen and (max-width: 1040px)
 {
+	.features .container {
+		max-width: 520px;
+	}
+
+	.features .container div {
+		width: calc(50% - 8px);
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 550px)
+{
+	.features .container {
+		padding-bottom: 0px !important;
+	}
 
 	.features .container div {
 		display: block;
 		width: calc(100vw - 40px);
-		max-width: 320px;
+		max-width: 280px;
 		margin: 0px auto;
+		margin-top: 10px;
 		margin-bottom: 60px;
 	}
 }
