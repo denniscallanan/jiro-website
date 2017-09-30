@@ -92,7 +92,7 @@ function scrollToElementPlus(destination, duration = 400, easing = 'easeInOutQua
 
 function scrolly()
 {
-	var scroll = document.body.scrollTop;
+	var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
 	var header = document.getElementsByTagName("header")[0];
 
 	if (scroll > 320)
