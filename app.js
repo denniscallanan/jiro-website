@@ -1,10 +1,10 @@
 var news = [
-	{
+	/*{
 		"title": "JiroPlay coming soon!",
 		"text": ["We hope JiroPlay will be available in the next 6 months.", "Before the end of 2018 the developers api should be completely ready allowing developers to easily create games for Jiro!"],
 		"author": "JiroPlay Team",
 		"date": "24/09/2017"
-	}
+	}*/
 ]
 
 const express = require('express')
