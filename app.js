@@ -8,26 +8,28 @@ var news = [
 ]
 
 const express = require('express')
-const cookieParser = require('cookie-parser')
-var bodyParser = require('body-parser')
-const session = require('express-session');
+//const cookieParser = require('cookie-parser')
+//var bodyParser = require('body-parser')
+//const session = require('express-session');
 const app = express()
 
 app.use('/static', express.static('static'))
 app.use('/',       express.static('root'))
-app.use(cookieParser())
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(session({'secret': 'Ohhh... this is a secret msg gregory;;'}))
+//app.use(cookieParser())
+//app.use(bodyParser.urlencoded({extended: true}));
+//app.use(session({'secret': 'Ohhh... this is a secret msg gregory;;'}))
 
 app.engine('html', require('ejs').renderFile)
 app.set('view engine', 'html')
 
 app.get('/', function (req, res) {
-	renderIfProceed(req, res, 'index.html')
+	res.render('index.html')
+	//renderIfProceed(req, res, 'index.html')
 })
 
 app.get('/news', function(req, res) {
-	renderIfProceed(req, res, 'news.html', {'news': news})
+	res.render('news.html', {'news': news})
+	//renderIfProceed(req, res, 'news.html', {'news': news})
 })
 
 app.get('/proceed', function(req, res) {
